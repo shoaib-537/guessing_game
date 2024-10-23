@@ -13,13 +13,12 @@ fn main() {
         io::stdin()
             .read_line(&mut guess)
             .expect("Falied to read the lines");
-        
+
         let guess: u32 = match guess.trim().parse() {
             Ok(num) => num,
             Err(_) => continue,
         };
 
-        // let guess: u32 = guess.trim().parse().expect("Please type a number!");
 
         print!("You have gussed {guess}");
 
